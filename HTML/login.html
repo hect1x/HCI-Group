@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/validator.js"></script>
 </head>
 <body>
     <div class = "login-form">
@@ -12,9 +13,9 @@
             <div class = "main">
                 <div class = "content">
                     <h2 id = "custompurple">Login</h2>
-                    <form action="" method="post">
-                        <input type="text" name = "username" placeholder="Username" required autofocus ="">
-                        <input type="password" name = "password" placeholder="Passsword" required autofocus = "">
+                    <form id="formjs" action="" method="post" onsubmit="return validateForm()">
+                        <input type="text" name = "username" placeholder="Username" autofocus ="">
+                        <input type="password" name = "password" placeholder="Password" autofocus = "">
                         <button class = "btn" type = "submit"> 
                             Log In
                         </button>
@@ -25,9 +26,9 @@
                     <img src="../bee.png" alt="">
                     <h1 style = "color: orange;">BeeTune</h1>
                 </div>
-            </div>git remote add origin https://github.com/hect1x/HCI-Group.git
+            </div>
         </div>
     </div>
-    <script src="../JS/validator.js"></script>
+    
 </body>
 </html>

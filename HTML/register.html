@@ -12,11 +12,11 @@
             <div class = "main">
                 <div class = "content">
                     <h2 id = "custompurple">Account Register</h2>
-                    <form action="" method="post">
-                        <input type="text" name = "" placeholder="Username" required autofocus ="">
-                        <input type="text" name ="" placeholder="BINUS Email" required autofocus ="">
-                        <input type="password" name = "" placeholder="Passsword" required autofocus = "">
-                        <input type="password" name = "" placeholder="Confirm Password" required autofocus = "">
+                    <form action="" method="post" onsubmit = "return validateRegForm()">
+                        <input type="text" name = "username" placeholder="Username" required autofocus ="">
+                        <input type="text" name ="email" placeholder="BINUS Email" required autofocus ="">
+                        <input type="password" name = "password" placeholder="Passsword" required autofocus = "">
+                        <input type="password" name = "conpassword" placeholder="Confirm Password" required autofocus = "">
                         <button class = "btn" type = "submit"> 
                             Register
                         </button>
