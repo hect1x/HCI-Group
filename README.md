@@ -1,5 +1,5 @@
 - Christian Sadikin
-- Farrell Laurensius
-- Ronald Wong
+- Farrell Laurensius-
 - Jasson Theodorus
+- Ronald Wong
 - Sachio Akeno
