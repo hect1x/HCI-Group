@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background-color: #111111;
+    padding: 24px;
+    z-index: 2;
+}
+
+.sidebar .logo img{
+    width: 100px;
+}
+.sidebar .navigation ul{
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+.sidebar .navigation ul li{
+    padding: 10px 0px;
+}
+
+.sidebar .navigation ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.main-container{
+    margin-left: 250px;
+    margin-bottom: 100px;
+    text-align: right;
+}
+
+.topbar {
+    position: fixed;
+    justify-content: flex-end;
+    top: 0;
+    right: 0; 
+    display: flex;
+    background-color: #08132E;
+    padding: 27px 30px;
+    width: 100%;
+}
+
+.topbar .navbar {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: white;
+}
+
+.topbar .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 8px;
+}
+
+.song{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #08132E;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottombar {
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    right: 0;
+    background: #08132E;
+    display: flex;
+    justify-content: space-between;
+    z-index: 3;
+}
+.bottombar .text{
+    color: white;
+    background: #08132E;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 30px 20px;
+    z-index: 30;
+    margin-right: auto;
+}
+
+.bottombar .dummy img{
+    margin-left: 10px;
+    margin-top: 17px;
+    width: 50px;
+}
+
+.home-header{
+    padding: 20px 40px;
+    z-index: 50;
+}
+.home-header h2{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.home-header .list{
+    display: flex;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.home-header .list .item{
+    min-width: 140px;
+    width: 160px;
+    padding: 15px;
+    background-color: #181818;
+    border-radius: 6px;
+}
+
+.home-header .list .item img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    z-index: 5000;
+}
+
+.home-header .list .item h4{
+    color: white;
+    font-size: 14px;
+    margin: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.home-header .list .item p{
+    color: gray;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 600;
+}
