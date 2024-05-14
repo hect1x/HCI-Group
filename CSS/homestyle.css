@@ -1,64 +1,73 @@
 * {
-    padding: 0;
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 
-body{
-    background-color: black;
+body {
     font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    background-color: black;
 }
 
-.sidebar{
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.left {
     position: fixed;
-    left: 0;
     top: 0;
     bottom: 0;
-    width: 200px;
+    width: 15%; 
     background-color: #111111;
-    padding: 24px;
-    z-index: 2;
-}
-
-.sidebar .logo img{
-    width: 100px;
-}
-.sidebar .navigation ul{
-    list-style-type: none;
-    margin-top: 20px;
-}
-
-.sidebar .navigation ul li{
-    padding: 10px 0px;
-}
-
-.sidebar .navigation ul li a{
-    color: white;
-    text-decoration: none;
+    font-size: 1.4vw; 
     font-weight: bold;
-    font-size: 23px;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 5;
 }
 
-.main-container{
-    margin-left: 250px;
-    margin-bottom: 100px;
-    text-align: right;
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li img {
+    width: 40%; 
+}
+
+.menu ul li {
+    padding: 5px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a span {
+    position: relative;
+    top: -5px;
+    left: 8px;
 }
 
 .topbar {
     position: fixed;
-    justify-content: flex-end;
     top: 0;
-    right: 0; 
-    display: flex;
+    right: 0;
     background-color: #08132E;
-    padding: 27px 30px;
+    padding: 2vh;
     width: 100%;
+    z-index: 3;
 }
 
 .topbar .navbar {
     display: flex;
     align-items: center;
-    text-align: right;
+    justify-content: flex-end;
     color: white;
 }
 
@@ -66,92 +75,40 @@ body{
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin: 0 8px;
+    font-size: 1.2vw;
+    margin: 0 1vw; 
 }
-
-.song{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #08132E;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
+.right {
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 6vh;
 }
 
 .bottombar {
     position: fixed;
     bottom: 0;
-    left: 0; 
+    left: 0;
     right: 0;
     background: #08132E;
     display: flex;
     justify-content: space-between;
-    z-index: 3;
+    padding: 1vh 0.7vw; 
+    z-index: 6;
 }
-.bottombar .text{
+
+.bottombar .text {
     color: white;
-    background: #08132E;
-    font-weight: 400;
-    font-size: 15px;
-    margin-bottom: 5px;
-    padding: 30px 20px;
-    z-index: 30;
+    font-size: 1vw; 
+    margin-top: 2vh;
     margin-right: auto;
+    padding: 1vh 1vw;
 }
 
-.bottombar .dummy img{
-    margin-left: 10px;
-    margin-top: 17px;
-    width: 50px;
+.bottombar .dummy img {
+    margin-top: 1vh;
+    width: 100%; 
 }
 
-.home-header{
-    padding: 20px 40px;
-    z-index: 50;
-}
-.home-header h2{
-    color: white;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.home-header .list{
-    display: flex;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.home-header .list .item{
-    min-width: 140px;
-    width: 160px;
-    padding: 15px;
-    background-color: #181818;
-    border-radius: 6px;
-}
-
-.home-header .list .item img{
-    width: 100%;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    z-index: 5000;
-}
-
-.home-header .list .item h4{
-    color: white;
-    font-size: 14px;
-    margin: 10px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.home-header .list .item p{
-    color: gray;
-    font-size: 12px;
-    line-height: 20px;
-    font-weight: 600;
+.bottombar .dummy {
+    width: 4vw;
 }

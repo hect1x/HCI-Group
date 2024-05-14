@@ -7,7 +7,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
-    background-color: black;
+    background-color: #082F92;
 }
 
 .container{
@@ -92,8 +92,8 @@ body {
     background: #08132E;
     display: flex;
     justify-content: space-between;
-    padding: 1vh 0.7vw; 
     z-index: 6;
+    height: 8%;
 }
 
 .bottombar .text {
@@ -106,7 +106,9 @@ body {
 
 .bottombar .dummy img {
     margin-top: 1vh;
-    width: 100%; 
+    width: 80%;
+    height: 80%; 
+    margin-left: 0.5vw;
 }
 
 .bottombar .dummy {
@@ -125,22 +127,80 @@ body {
     width: 20%;
 }
 .library-header .libimg img{
-    width: 100%;
-    height: 100%;
-    padding: 2vh 1vw;
+    margin-top: 2.5vh;
+    margin-left: 0.5vw;
+    width: 80%;
+    height: 80%;
 }
 
 .libtext{
     color: white;
     width: 80%;
-    margin-top: 2vh;
-    margin-left: 2vh;
+    margin-top: 2.5vh;
 }
 
 .libtext h1{
     font-size: 5vw;
 }
 
-.playsongs{
-    color: purple;
+.songtable{
+    margin-top: 2vh;
 }
+
+.songtable table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.songtable tr td, .songtable tr th{
+    padding: 1vh;
+    color: white;
+}
+
+.songtable table tr th{
+    font-weight: 200;
+    font-size: 1.5vh;
+}
+
+.songtable table th{
+    text-align: left;
+}
+.songtable table tr:first-of-type{
+    border-bottom: 0.2vh solid gray;
+}
+.song-title {
+    width: 50%;
+    height: 100%;
+}
+.song-image {
+    height: 100%;
+    display: inline-block; 
+    vertical-align: middle;
+}
+.song-image img {
+    width: 5vh;
+    height: 5vh;
+}
+.song-name-artist {
+    margin-left: 1vh;
+    display: inline-block; 
+    vertical-align: middle; 
+}
+
+.name{
+    font-weight: bold;
+    font-size: 1.5vh;
+    color: white;
+}
+
+.artist, .album, .date, tr td{
+    font-size: 1.5vh;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+.title{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
