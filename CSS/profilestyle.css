@@ -7,7 +7,7 @@
 body {
     font-family: 'Courier New', Courier, monospace;
     height: 100vh;
-    background-color: #082F92;
+    background-color: black;
 }
 
 .container{
@@ -124,82 +124,64 @@ body {
 
 .library-header .libimg{
     height: 100%;
-    width: 30vw;
+    width: 20%;
+    
 }
 .library-header .libimg img{
-    width: 70%;
-    height: 100%;
+    margin-top: 2.5vh;
+    margin-left: 0.5vw;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
 }
 
 .libtext{
     color: white;
     width: 80%;
-    margin-top: 4vh;
+    margin-top: 2.5vh;
 }
 
 .libtext h1{
     font-size: 5vw;
 }
 
-.songtable{
+.tagline{
+    font-size: 4vh;
+    font-weight: bold;
+    color: white;
     margin-top: 2vh;
-}
-
-.songtable table{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.songtable table{
-    border-collapse: collapse;
-    width: 100%;
-}
-.songtable table th{
-    text-align: left;
-}
-.songtable .waiting{
     margin-left: 2vw;
-    color: gray;
-    font-size: 3vh;
-    font-weight: bold;
 }
-.song-title {
-    width: 50%;
-    height: 100%;
+
+.edit-acc {
+    position: relative; 
 }
-.songtable tr td{
+
+.edit-acc h3{
+    color: white;
+    margin-left: 4vw;
+    font-size: 2vh;
     padding: 1vh;
+}
+
+.edit-acc input{
+    color: black;
+    margin-left: 4vw;
+    border-radius: 25px;
+    font-size: 4vh;
+    width: 70vw;
+    height: 8vh;
+}
+
+.edit-acc button{
+    margin-top: 2vh;
+    background: #348E38;
+    border-radius: 18px;
+    font-size: 2vh;
     color: white;
-}
-
-.songtable table th{
-    text-align: left;
-}
-
-.song-image {
-    height: 100%;
-    display: inline-block; 
-    vertical-align: middle;
-}
-.song-image img {
-    width: 5vh;
-    height: 5vh;
-}
-.song-name-artist {
-    margin-left: 1vh;
-    display: inline-block; 
-    vertical-align: middle; 
-}
-
-.played{
-    margin-left: 2vw;
-    color: gray;
-    font-size: 3vh;
-    font-weight: bold;
-}
-
-.name{
-    font-weight: bold;
-    font-size: 1.5vh;
-    color: white;
+    width: 10vw;
+    height: 8vh;
+    position: absolute; 
+    right: 0; 
+    margin-right: 11vw;
 }

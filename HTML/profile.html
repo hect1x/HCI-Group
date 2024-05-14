@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="../CSS/profilestyle.css">
+    <script src="../JS/validator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <ul>
+                    <li>
+                        <a href="home.html">
+                            <img src="../bee.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="home.html">
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="library.html">
+                            <span>Library</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="req.html">
+                            <span>Request</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="topbar">
+                <div class="navbar">
+                    <a href="">Settings</a>
+                    <a href="profile.html">Jasson</a>
+                </div>
+        </div>
+
+
+        <div class="right">
+            <div class="library-header">
+                <div class="libimg">
+                    <img src="../prof.png" alt="">
+                </div>
+                <div class="libtext">
+                    <h1>Jasson</h1>
+                    <h5>90 following</h5>
+                </div>
+            </div>
+
+
+            <div class="tagline">
+                Edit Akun
+            </div>
+            <br><br>
+            <div class="edit-acc">
+                <form action="home.html" method="post" onsubmit = "return validateEditForm()">
+                    <h3>Username</h3>
+                    <input type="text" name="username" id="">
+                    <h3>Email</h3>
+                    <input type="email" name="email">
+                    <h3>Phone Number</h3>
+                    <input type="number" name = "number">
+                    <h3>Password</h3>
+                    <input type="password" name="password">
+                    <h3>Confirm Password</h3>
+                    <input type="password" name="conpassword">
+                    <br>
+                    <button class = "btn" type ="submit">
+                        Simpan Profil
+                    </button>
+                </form>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+
+        <div class="bottombar">
+            <div class="dummy">
+                <img src="../song.png" alt="">
+            </div>
+            <div class="text">
+                Playing Angels by The XX from PLAYING FROM: COEXIST
+            </div>
+        </div>
+    </div>
+</body>
+</html>
