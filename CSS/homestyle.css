@@ -27,7 +27,15 @@ body {
     text-decoration: none;
     color: white;
 }
+.menu ul li a:hover {
+    text-decoration: none;
+    color: white;
+    color: gray;
+}
 
+.topbar .navbar a:hover {
+    color:gray; 
+}
 .menu ul li a span {
     position: relative;
 }
