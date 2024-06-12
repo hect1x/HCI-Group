@@ -5,11 +5,40 @@
 }
 
 body {
+    background-color: #101474;
     font-family: "Montserrat", sans-serif;
     height: 100vh;
-    background-color: #082F92;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+.menu ul li img {
+    width: 40%; 
+}
+
+.menu ul li {
+    padding: 1vh;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:hover {
+    text-decoration: none;
+    color: white;
+    color: gray;
+}
+
+.topbar .navbar a:hover {
+    color:gray; 
+}
+.menu ul li a span {
+    position: relative;
+}
 .container{
     height: 100vh;
     display: flex;
@@ -27,37 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 5;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li img {
-    width: 40%; 
-}
-
-.menu ul li {
-    padding: 1vh;
-}
-.menu ul li a:hover {
-    text-decoration: none;
-    color: white;
-    color: gray;
-}
-
-.topbar .navbar a:hover {
-    color:gray; 
-}
-.menu ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.menu ul li a span {
-    position: relative;
 }
 
 .topbar {
@@ -130,82 +128,60 @@ body {
 
 .library-header .libimg{
     height: 100%;
-    width: 30vw;
+    width: 20%;
 }
 .library-header .libimg img{
-    width: 70%;
-    height: 100%;
+    margin-top: 2.5vh;
+    margin-left: 0.5vw;
+    width: 80%;
+    height: 80%;
 }
 
 .libtext{
     color: white;
     width: 80%;
-    margin-top: 4vh;
+    margin-top: 2.5vh;
 }
 
 .libtext h1{
     font-size: 5vw;
 }
-
-.songtable{
-    margin-top: 2vh;
+.right{
+    display: flex;
+    justify-content: center;
+}
+.inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc(100% - 3vw);
+    margin: 7vh auto 0 auto;
+    background-color: black;
+    height: 70vh;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.songtable table{
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.songtable table{
-    border-collapse: collapse;
-    width: 100%;
-}
-.songtable table th{
-    text-align: left;
-}
-.songtable .waiting{
-    margin-left: 2vw;
-    color: gray;
-    font-size: 3vh;
-    font-weight: bold;
-}
-.song-title {
-    width: 50%;
-    height: 100%;
-}
-.songtable tr td{
-    padding: 1vh;
+.inner h1 {
     color: white;
+    font-size: 10vh;
+    margin: 0;
 }
 
-.songtable table th{
-    text-align: left;
+.sub {
+    width: 100%;
+    height: 8vh;
+    background-color: #3D133A;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
 }
 
-.song-image {
-    height: 100%;
-    display: inline-block; 
-    vertical-align: middle;
-}
-.song-image img {
-    width: 5vh;
-    height: 5vh;
-}
-.song-name-artist {
-    margin-left: 1vh;
-    display: inline-block; 
-    vertical-align: middle; 
-}
-
-.played{
-    margin-left: 2vw;
+.sub span{
     color: gray;
-    font-size: 3vh;
+    margin-left: 3vw;
+    font-size: 5vh;
     font-weight: bold;
-}
-
-.name{
-    font-weight: bold;
-    font-size: 1.5vh;
-    color: white;
 }

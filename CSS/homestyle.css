@@ -162,13 +162,14 @@ body {
     margin-bottom: 1vh;
     flex-wrap: wrap; 
     gap: 3vh 3.5vw; 
+    text-align: center;
 }
 
 .spo-play .list .item{
     min-width: 6vw;
     width: 10vw;
     padding: 1vh 0.5vw;
-    background-color: #082F92;
+    /* background-color: #082F92; */
     border-radius: 6px;
 }
 
@@ -207,13 +208,14 @@ body {
     margin-bottom: 1vh;
     flex-wrap: wrap; 
     gap: 3vh 3.5vw; 
+    text-align: center;
 }
 
 .focus .list .item{
     min-width: 6vw;
     width: 10vw;
     padding: 1vh 0.5vw;
-    background-color: #082F92;
+    /* background-color: #082F92; */
     border-radius: 6px;
 }
 
@@ -252,13 +254,14 @@ body {
     margin-bottom: 1vh;
     flex-wrap: wrap; 
     gap: 3vh 3.5vw; 
+    text-align: center;
 }
 
 .best-ep .list .item{
     min-width: 6vw;
     width: 10vw;
     padding: 1vh 0.5vw;
-    background-color: #082F92;
+    /* background-color: #082F92; */
     border-radius: 6px;
 }
 

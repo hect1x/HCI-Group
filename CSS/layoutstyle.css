@@ -5,11 +5,40 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
     height: 100vh;
-    background-color: #082F92;
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
+.menu ul li img {
+    width: 40%; 
+}
+
+.menu ul li {
+    padding: 1vh;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a:hover {
+    text-decoration: none;
+    color: white;
+    color: gray;
+}
+
+.topbar .navbar a:hover {
+    color:gray; 
+}
+.menu ul li a span {
+    position: relative;
+}
 .container{
     height: 100vh;
     display: flex;
@@ -27,31 +56,6 @@ body {
     display: flex;
     flex-direction: column;
     z-index: 5;
-}
-
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.menu ul li img {
-    width: 40%; 
-}
-
-.menu ul li {
-    padding: 5px;
-}
-
-.menu ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-.menu ul li a span {
-    position: relative;
-    top: -5px;
-    left: 8px;
 }
 
 .topbar {
